@@ -17,7 +17,6 @@ class Customer
     def total_customers()
         puts "Total Customers: #@@no_of_customers"
     end
-
 end
 
 
