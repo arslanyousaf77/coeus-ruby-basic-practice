@@ -4,7 +4,8 @@ person.each do |key, value|
   puts "Bob's #{key} is #{value}"
 end
 
-person[:father] = 'Arslan'
+person[:father] = 'Arslan' #adding new key,val
+person[:name] = 'Zeeshan' #updating existing value
 puts person
 person.delete(:height)
 puts person
@@ -18,6 +19,6 @@ def greeting(name, options = {})
     end
   end
   
-  greeting("Bob")
+greeting("Bob")
 greeting("Bob", {age: 62, city: "New York City"})
 #greeting("Bob", age: 62, city: "New York City")
